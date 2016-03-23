@@ -1,0 +1,56 @@
+﻿<UserControl x:Class="DiligentWindows.Controls.SettingsItem"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="using:DiligentWindows.Controls"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:wpfSpark="using:WPFSpark"
+             xmlns:interactivity="using:Microsoft.Xaml.Interactivity"
+             mc:Ignorable="d"
+             IsTapEnabled="True"
+             Tapped="OnItemTapped"
+             d:DesignHeight="300"
+             d:DesignWidth="400">
+    <interactivity:Interaction.Behaviors>
+        <wpfSpark:FluidPointerDragBehavior DragButton="Pointer"></wpfSpark:FluidPointerDragBehavior>
+    </interactivity:Interaction.Behaviors>
+    <Grid Margin="2">
+        <Grid.RowDefinitions>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Border x:Name="BgBorder"
+                Grid.RowSpan="2"
+                Grid.ColumnSpan="2"
+                CornerRadius="0"
+                Background="#EEE6ECF0"
+                Opacity="0.55"></Border>
+        <TextBlock x:Name="Logo"
+                   Grid.RowSpan="2"
+                   Grid.ColumnSpan="2"
+                   AutomationProperties.AccessibilityView="Raw"
+                   Foreground="Black"
+                   FontStyle="Normal"
+                   FontSize="28"
+                   FontFamily="{ThemeResource SymbolThemeFontFamily}"
+                   HorizontalAlignment="Left"
+                   VerticalAlignment="Top"
+                   Text="{Binding GlyphIcon}"
+                   Margin="10" />
+        <TextBlock x:Name="LogoText"
+                   Grid.Row="1"
+                   Grid.ColumnSpan="2"
+                   AutomationProperties.AccessibilityView="Raw"
+                   Foreground="Black"
+                   FontStyle="Normal"
+                   FontSize="15"
+                   HorizontalAlignment="Left"
+                   Margin="5"
+                   Text="{Binding Text}"
+                   VerticalAlignment="Center" />
+    </Grid>
+</UserControl>

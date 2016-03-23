@@ -1,0 +1,2 @@
+MainPackage=G:\WorkBox\DiligentWindows\DiligentWindows\bin\x86\Release\Upload\DiligentWindows_1.1.4.0_x86.appx
+SymbolPackage=G:\WorkBox\DiligentWindows\DiligentWindows\AppPackages\DiligentWindows_1.1.4.0\DiligentWindows_1.1.4.0_x86.appxsym

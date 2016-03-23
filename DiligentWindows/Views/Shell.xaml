@@ -1,0 +1,96 @@
+﻿<Page x:Class="DiligentWindows.Views.Shell"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:local="using:DiligentWindows.Views"
+      xmlns:controls="using:Template10.Controls"
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+      xmlns:localControls="using:DiligentWindows.Controls"
+      mc:Ignorable="d"
+      Background="#c1b49a">
+
+    <controls:HamburgerMenu x:Name="MyHamburgerMenu" PaneClosed="MyHamburgerMenu_OnPaneClosed">
+
+        <controls:HamburgerMenu.PrimaryButtons>
+            <!--  Home button  -->
+            <controls:HamburgerButtonInfo ClearHistory="True"
+                                          PageType="local:HomePage">
+                <StackPanel Orientation="Horizontal">
+                    <!--<SymbolIcon Width="48"
+                                Height="48"
+                                Symbol="Home" />-->
+                    <localControls:GlyphIcon Width="48"
+                                             Height="48"
+                                             Foreground="White"
+                                             Glyph="{StaticResource Home.Glyph}"></localControls:GlyphIcon>
+                    <TextBlock Margin="12,0,0,0"
+                               VerticalAlignment="Center"
+                               Text="Home" />
+                </StackPanel>
+            </controls:HamburgerButtonInfo>
+            <!--  LockScreenPC button  -->
+            <controls:HamburgerButtonInfo ClearHistory="True"
+                                          PageType="local:LockScreenPCPage">
+                <StackPanel Orientation="Horizontal">
+                    <localControls:GlyphIcon Width="48"
+                                             Height="48"
+                                             Foreground="White"
+                                             Glyph="{StaticResource LockScreenPC.Glyph}"></localControls:GlyphIcon>
+                    <TextBlock Margin="12,0,0,0"
+                               VerticalAlignment="Center"
+                               Text="LockScreen PC" />
+                </StackPanel>
+            </controls:HamburgerButtonInfo>
+            <!--  LockScreenMobile button  -->
+            <controls:HamburgerButtonInfo ClearHistory="True"
+                                          PageType="local:LockScreenMobilePage">
+                <StackPanel Orientation="Horizontal">
+                    <localControls:GlyphIcon Width="48"
+                                             Height="48"
+                                             Foreground="White"
+                                             Glyph="{StaticResource LockScreenMobile.Glyph}"></localControls:GlyphIcon>
+                    <TextBlock Margin="12,0,0,0"
+                               VerticalAlignment="Center"
+                               Text="LockScreen Mobile" />
+                </StackPanel>
+            </controls:HamburgerButtonInfo>
+            <!--  QuickActions button  -->
+            <controls:HamburgerButtonInfo ClearHistory="True"
+                                          PageType="local:QuickActionsPage">
+                <StackPanel Orientation="Horizontal">
+                    <localControls:GlyphIcon Width="48"
+                                             Height="48"
+                                             Foreground="White"
+                                             Glyph="{StaticResource QuickActions.Glyph}"></localControls:GlyphIcon>
+                    <TextBlock Margin="12,0,0,0"
+                               VerticalAlignment="Center"
+                               Text="Quick Actions" />
+                </StackPanel>
+            </controls:HamburgerButtonInfo>
+        </controls:HamburgerMenu.PrimaryButtons>
+
+        <!--<controls:HamburgerMenu.SecondaryButtons>
+            -->
+        <!--  settingspage button  -->
+        <!--
+            <controls:HamburgerButtonInfo x:Name="SettingsButton"
+                                          PageParameter="0"
+                                          PageType="views:SettingsPage">
+                <controls:HamburgerButtonInfo.NavigationTransitionInfo>
+                    <SuppressNavigationTransitionInfo />
+                </controls:HamburgerButtonInfo.NavigationTransitionInfo>
+                <StackPanel Orientation="Horizontal">
+                    <SymbolIcon Width="48"
+                                Height="48"
+                                Symbol="Setting" />
+                    <TextBlock Margin="12,0,0,0"
+                               VerticalAlignment="Center"
+                               Text="Settings" />
+                </StackPanel>
+            </controls:HamburgerButtonInfo>
+        </controls:HamburgerMenu.SecondaryButtons>-->
+
+    </controls:HamburgerMenu>
+
+</Page>
+

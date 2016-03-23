@@ -1,0 +1,265 @@
+﻿<Page x:Class="DiligentWindows.Views.HomePage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:local="using:DiligentWindows.Views"
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+      mc:Ignorable="d">
+
+    <Grid Background="#ffc1b49a">
+        <VisualStateManager.VisualStateGroups>
+            <VisualStateGroup x:Name="AdaptiveVisualStateGroup">
+                <VisualState x:Name="VisualStateWide">
+                    <VisualState.StateTriggers>
+                        <AdaptiveTrigger MinWindowWidth="{StaticResource WideMinWidth}" />
+                    </VisualState.StateTriggers>
+                    <VisualState.Setters>
+                        <!--  TODO: change properties for wide view  -->
+                        <Setter Target="LogoVB.Width"
+                                Value="600"></Setter>
+                        <Setter Target="LogoVB.Height"
+                                Value="300"></Setter>
+                        <Setter Target="HorzRule.Margin"
+                                Value="50,280,50,50"></Setter>
+                        <Setter Target="IntroSV.Margin"
+                                Value="50,340,50,50" />
+                    </VisualState.Setters>
+                </VisualState>
+                <VisualState x:Name="VisualStateLandscapeNormal">
+                    <VisualState.StateTriggers>
+                        <AdaptiveTrigger MinWindowWidth="{StaticResource NormalMinWidth}" />
+                    </VisualState.StateTriggers>
+                    <VisualState.Setters>
+                        <!--TODO: change properties for normal view-->
+                        <Setter Target="LogoVB.Width"
+                                Value="300"></Setter>
+                        <Setter Target="LogoVB.Height"
+                                Value="150"></Setter>
+                        <Setter Target="HorzRule.Margin"
+                                Value="20,140,20,20"></Setter>
+                        <Setter Target="IntroSV.Margin"
+                                Value="20,170,20,20" />
+                    </VisualState.Setters>
+                </VisualState>
+                <VisualState x:Name="VisualStateNarrow">
+                    <VisualState.StateTriggers>
+                        <AdaptiveTrigger MinWindowWidth="{StaticResource NarrowMinWidth}" />
+                    </VisualState.StateTriggers>
+                    <VisualState.Setters>
+                        <!--  TODO: change properties for narrow view  -->
+                        <Setter Target="LogoVB.Width"
+                                Value="300"></Setter>
+                        <Setter Target="LogoVB.Height"
+                                Value="150"></Setter>
+                        <Setter Target="HorzRule.Margin"
+                                Value="20,140,20,20"></Setter>
+                        <Setter Target="IntroSV.Margin"
+                                Value="20,170,20,20" />
+                    </VisualState.Setters>
+                </VisualState>
+                <!--<VisualState x:Name="VisualStateNormal">
+                    <VisualState.StateTriggers>
+                        <AdaptiveTrigger MinWindowWidth="{StaticResource NormalMinWidth}" />
+                    </VisualState.StateTriggers>
+                    <VisualState.Setters>
+                        -->
+                <!--  TODO: change properties for normal view  -->
+                <!--
+                        <Setter Target="LogoVB.Width"
+                                Value="600"></Setter>
+                        <Setter Target="LogoVB.Height"
+                                Value="300"></Setter>
+                        <Setter Target="HorzRule.Margin"
+                                Value="50,280,50,50"></Setter>
+                        <Setter Target="Intro.Margin"
+                                Value="50,340,50,50" />
+                    </VisualState.Setters>
+                </VisualState>-->
+            </VisualStateGroup>
+        </VisualStateManager.VisualStateGroups>
+        <!-- Logo -->
+        <Viewbox x:Name="LogoVB"
+                 Width="600"
+                 Height="300"
+                 HorizontalAlignment="Center"
+                 VerticalAlignment="Top">
+            <Canvas Width="600.000"
+                    Height="302.115">
+
+                <Canvas>
+                    <!-- Layer 1/<Rectangle> -->
+                    <Path Fill="#ffc1b49a"
+                          Data="F1 M 600.000,302.115 L 0.000,302.115 L 0.000,0.000 L 600.000,0.000 L 600.000,302.115 Z" />
+
+                    <!-- Layer 1/<Path> -->
+                    <Path Opacity="0.8"
+                          Fill="#ff7895a3"
+                          Data="F1 M 300.937,155.801 L 300.937,107.613 C 300.937,105.819 301.895,104.160 303.449,103.263 L 345.181,79.169 L 345.181,130.257 L 300.937,155.801 Z" />
+
+                    <!-- Layer 1/<Path> -->
+                    <Path Opacity="0.8"
+                          Fill="#ff7895a3"
+                          Data="F1 M 300.937,53.625 L 300.937,101.812 C 300.937,103.607 299.980,105.266 298.425,106.163 L 256.693,130.257 L 256.693,79.169 L 300.937,53.625 Z" />
+
+                    <!-- Layer 1/<Compound Path> -->
+                    <Path Fill="#ff9f2421"
+                          Data="F1 M 326.330,119.373 L 306.515,130.813 L 306.515,107.933 L 326.330,96.493 L 326.330,119.373 Z M 326.247,68.237 L 326.330,68.285 L 326.330,90.053 L 302.510,103.805 C 301.537,104.367 300.937,105.405 300.937,106.529 L 300.937,140.474 L 331.908,122.594 L 331.908,122.594 L 331.908,65.065 L 326.247,68.237 Z" />
+
+                    <!-- Layer 1/<Path> -->
+                    <Path Fill="#ff809cab"
+                          Data="F1 M 300.937,161.755 C 300.530,161.755 300.122,161.676 299.739,161.518 C 300.122,161.676 300.530,161.755 300.937,161.755 Z" />
+
+                    <!-- Layer 1/<Path> -->
+                    <Path Fill="#ff809cab"
+                          Data="F1 M 345.181,130.257 L 300.937,155.801 L 300.937,155.801 L 345.181,130.257 Z" />
+
+                    <!-- Layer 1/<Path> -->
+                    <Path Fill="#ff809cab"
+                          Data="F1 M 281.604,151.080 L 298.148,160.632 L 281.604,151.080 L 281.604,151.080 Z" />
+
+                    <!-- Layer 1/<Path> -->
+                    <Path Fill="#ff191919"
+                          Data="F1 M 302.135,161.518 C 301.752,161.676 301.345,161.755 300.937,161.755 C 301.345,161.755 301.752,161.676 302.135,161.518 Z" />
+
+                    <!-- Layer 1/<Path> -->
+                    <Path Fill="#ff191919"
+                          Data="F1 M 300.937,155.801 L 300.937,155.801 L 281.604,144.639 L 281.604,144.639 L 300.937,155.801 Z" />
+
+                    <!-- Layer 1/<Path> -->
+                    <Path Fill="#ff191919"
+                          Data="F1 M 276.026,147.860 L 276.026,147.860 L 281.604,151.080 L 281.604,151.080 L 276.026,147.860 Z" />
+
+                    <!-- Layer 1/<Path> -->
+                    <Path Fill="#ff191919"
+                          Data="F1 M 281.604,144.639 L 281.604,144.639 L 276.026,141.419 L 276.026,141.419 L 281.604,144.639 Z" />
+
+                    <!-- Layer 1/<Path> -->
+                    <Path Fill="#ff221f1f"
+                          Data="F1 M 349.186,75.040 L 349.186,75.040 L 348.637,74.723 L 349.186,75.040 Z" />
+
+                    <!-- Layer 1/<Path> -->
+                    <Path Fill="#ff082d3d"
+                          Data="F1 M 251.537,76.192 C 251.536,76.193 251.535,76.195 251.534,76.197 L 251.115,75.955 L 251.115,77.765 L 251.115,82.396 L 251.115,127.008 L 251.115,133.449 L 251.115,133.477 L 251.140,133.463 L 256.693,136.669 L 256.693,85.617 L 256.693,79.176 L 256.693,79.169 L 251.537,76.192 Z" />
+
+                    <Canvas>
+
+                        <!-- Layer 1/<Group>/<Compound Path> -->
+                        <Path Fill="#ff0c3542"
+                              Data="F1 M 182.858,191.209 L 182.858,214.069 L 189.708,214.069 C 197.088,214.069 201.744,209.035 201.744,202.714 L 201.744,202.639 C 201.744,196.356 197.088,191.209 189.708,191.209 L 182.858,191.209 Z M 180.890,189.393 L 189.708,189.393 C 198.035,189.393 203.787,195.107 203.787,202.563 L 203.787,202.639 C 203.787,210.095 198.035,215.885 189.708,215.885 L 180.890,215.885 L 180.890,189.393 Z" />
+
+                        <!-- Layer 1/<Group>/<Compound Path> -->
+                        <Path Fill="#ff0c3542"
+                              Data="F1 M 212.643,189.393 L 214.611,189.393 L 214.611,215.885 L 212.643,215.885 L 212.643,189.393 Z" />
+
+                        <!-- Layer 1/<Group>/<Compound Path> -->
+                        <Path Fill="#ff0c3542"
+                              Data="F1 M 224.639,189.393 L 226.608,189.393 L 226.608,214.069 L 242.162,214.069 L 242.162,215.885 L 224.639,215.885 L 224.639,189.393 Z" />
+
+                        <!-- Layer 1/<Group>/<Compound Path> -->
+                        <Path Fill="#ff0c3542"
+                              Data="F1 M 250.223,189.393 L 252.191,189.393 L 252.191,215.885 L 250.223,215.885 L 250.223,189.393 Z" />
+
+                        <!-- Layer 1/<Group>/<Compound Path> -->
+                        <Path Fill="#ff0c3542"
+                              Data="F1 M 261.046,202.714 L 261.046,202.639 C 261.046,195.486 266.231,188.939 274.141,188.939 C 278.456,188.939 281.180,190.225 283.830,192.420 L 282.543,193.896 C 280.461,192.080 278.039,190.717 274.027,190.717 C 267.594,190.717 263.090,196.167 263.090,202.563 L 263.090,202.639 C 263.090,209.489 267.366,214.599 274.444,214.599 C 277.812,214.599 280.953,213.198 282.883,211.571 L 282.883,203.964 L 274.027,203.964 L 274.027,202.147 L 284.776,202.147 L 284.776,212.365 C 282.391,214.485 278.683,216.339 274.368,216.339 C 266.004,216.339 261.046,210.170 261.046,202.714 Z" />
+
+                        <!-- Layer 1/<Group>/<Compound Path> -->
+                        <Path Fill="#ff0c3542"
+                              Data="F1 M 293.783,189.393 L 312.630,189.393 L 312.630,191.209 L 295.751,191.209 L 295.751,201.617 L 310.927,201.617 L 310.927,203.434 L 295.751,203.434 L 295.751,214.069 L 312.819,214.069 L 312.819,215.885 L 293.783,215.885 L 293.783,189.393 Z" />
+
+                        <!-- Layer 1/<Group>/<Compound Path> -->
+                        <Path Fill="#ff0c3542"
+                              Data="F1 M 321.032,189.393 L 322.886,189.393 L 341.166,212.441 L 341.166,189.393 L 343.058,189.393 L 343.058,215.885 L 341.582,215.885 L 322.924,192.345 L 322.924,215.885 L 321.032,215.885 L 321.032,189.393 Z" />
+
+                        <!-- Layer 1/<Group>/<Compound Path> -->
+                        <Path Fill="#ff0c3542"
+                              Data="F1 M 360.165,191.209 L 350.930,191.209 L 350.930,189.393 L 371.367,189.393 L 371.367,191.209 L 362.133,191.209 L 362.133,215.885 L 360.165,215.885 L 360.165,191.209 Z" />
+
+                    </Canvas>
+
+                    <Canvas>
+
+                        <!-- Layer 1/<Group>/<Compound Path> -->
+                        <Path Fill="#ff0c3542"
+                              Data="F1 M 204.600,221.543 L 206.795,221.543 L 215.122,245.122 L 222.880,221.467 L 224.394,221.467 L 232.153,245.122 L 240.479,221.543 L 242.523,221.543 L 232.910,248.225 L 231.320,248.225 L 223.562,225.214 L 215.803,248.225 L 214.213,248.225 L 204.600,221.543 Z" />
+
+                        <!-- Layer 1/<Group>/<Compound Path> -->
+                        <Path Fill="#ff0c3542"
+                              Data="F1 M 250.507,221.543 L 252.475,221.543 L 252.475,248.036 L 250.507,248.036 L 250.507,221.543 Z" />
+
+                        <!-- Layer 1/<Group>/<Compound Path> -->
+                        <Path Fill="#ff0c3542"
+                              Data="F1 M 262.504,221.543 L 264.358,221.543 L 282.638,244.592 L 282.638,221.543 L 284.531,221.543 L 284.531,248.036 L 283.055,248.036 L 264.396,224.495 L 264.396,248.036 L 262.504,248.036 L 262.504,221.543 Z" />
+
+                        <!-- Layer 1/<Group>/<Compound Path> -->
+                        <Path Fill="#ff0c3542"
+                              Data="F1 M 296.262,223.360 L 296.262,246.219 L 303.112,246.219 C 310.493,246.219 315.148,241.185 315.148,234.865 L 315.148,234.789 C 315.148,228.507 310.493,223.360 303.112,223.360 L 296.262,223.360 Z M 294.294,221.543 L 303.112,221.543 C 311.439,221.543 317.191,227.258 317.191,234.714 L 317.191,234.789 C 317.191,242.245 311.439,248.036 303.112,248.036 L 294.294,248.036 L 294.294,221.543 Z" />
+
+                        <!-- Layer 1/<Group>/<Compound Path> -->
+                        <Path Fill="#ff0c3542"
+                              Data="F1 M 349.209,234.865 L 349.209,234.789 C 349.209,228.242 344.440,222.868 337.893,222.868 C 331.345,222.868 326.652,228.166 326.652,234.714 L 326.652,234.789 C 326.652,241.337 331.421,246.711 337.968,246.711 C 344.516,246.711 349.209,241.413 349.209,234.865 Z M 324.609,234.865 L 324.609,234.789 C 324.609,227.561 329.945,221.089 337.968,221.089 C 345.992,221.089 351.252,227.485 351.252,234.714 L 351.252,234.789 C 351.252,242.018 345.916,248.490 337.893,248.490 C 329.869,248.490 324.609,242.094 324.609,234.865 Z" />
+
+                        <!-- Layer 1/<Group>/<Compound Path> -->
+                        <Path Fill="#ff0c3542"
+                              Data="F1 M 356.475,221.543 L 358.670,221.543 L 366.996,245.122 L 374.755,221.467 L 376.269,221.467 L 384.027,245.122 L 392.354,221.543 L 394.397,221.543 L 384.784,248.225 L 383.195,248.225 L 375.436,225.214 L 367.677,248.225 L 366.088,248.225 L 356.475,221.543 Z" />
+
+                        <!-- Layer 1/<Group>/<Compound Path> -->
+                        <Path Fill="#ff0c3542"
+                              Data="F1 M 399.657,244.175 L 400.944,242.699 C 403.858,245.386 406.545,246.635 410.443,246.635 C 414.417,246.635 417.142,244.403 417.142,241.375 L 417.142,241.299 C 417.142,238.499 415.666,236.871 409.648,235.660 C 403.290,234.373 400.716,232.216 400.716,228.204 L 400.716,228.128 C 400.716,224.192 404.312,221.164 409.232,221.164 C 413.093,221.164 415.628,222.224 418.315,224.382 L 417.066,225.933 C 414.569,223.776 412.071,222.943 409.156,222.943 C 405.258,222.943 402.684,225.176 402.684,227.939 L 402.684,228.015 C 402.684,230.816 404.123,232.519 410.405,233.805 C 416.537,235.054 419.110,237.249 419.110,241.110 L 419.110,241.185 C 419.110,245.462 415.439,248.414 410.329,248.414 C 406.091,248.414 402.836,247.014 399.657,244.175 Z" />
+
+                    </Canvas>
+
+                    <!-- Layer 1/<Path> -->
+                    <Path Fill="#ff082d3d"
+                          Data="F1 M 345.181,130.257 L 300.937,155.801 L 281.604,144.639 L 281.604,124.551 L 281.604,93.551 L 276.026,90.331 L 276.026,124.551 L 276.026,141.419 L 276.026,141.419 L 276.026,147.343 L 276.026,147.860 L 281.604,151.080 L 295.359,159.021 L 295.359,159.024 L 300.937,162.245 L 306.515,159.024 L 306.515,159.021 L 345.181,136.698 L 345.181,136.709 L 350.759,133.488 L 350.759,131.661 L 350.759,130.257 L 350.759,127.047 L 350.759,82.423 L 345.181,79.203 L 345.181,130.257 Z" />
+
+                </Canvas>
+            </Canvas>
+        </Viewbox>
+
+        <Border x:Name="HorzRule"
+                BorderThickness="0,1,0,0"
+                Height="1"
+                VerticalAlignment="Top"
+                BorderBrush="{ThemeResource DiligentHighlightBrush}"
+                Margin="50,280"></Border>
+        <ScrollViewer x:Name="IntroSV"
+                      HorizontalScrollBarVisibility="Disabled"
+                      VerticalScrollBarVisibility="Auto">
+            <StackPanel>
+                <TextBlock TextWrapping="WrapWholeWords"
+                           TextAlignment="Center"
+                           Foreground="{ThemeResource DiligentHighlightBrush}">
+                    <TextBlock.Inlines>
+                        <Bold>Diligent Windows</Bold>
+                        <Run xml:space="preserve"> is a collection of prototypes of various concept features of Windows 10 &amp; Windows 10 Mobile. These concepts aim to enhance the user experience of existing Windows features. These concepts are best viewed on a desktop/tablet.</Run>
+                    </TextBlock.Inlines>
+                </TextBlock>
+                <TextBlock TextWrapping="WrapWholeWords"
+                           TextAlignment="Center"
+                           Foreground="{ThemeResource DiligentHighlightBrush}"
+                           Margin="0,8,0,0">
+            <Run>This is a work in progress project, so you can expect additional concepts to be added in the near future. Any comments or suggestions are always welcome!</Run>
+                </TextBlock>
+                <TextBlock TextWrapping="WrapWholeWords"
+                           TextAlignment="Center"
+                           Foreground="{ThemeResource DiligentHighlightBrush}"
+                           Margin="0,16,0,0">
+            <Run>So click on each item in the menu (on the left), follow the specified instructions and watch these concepts in action...</Run>
+                </TextBlock>
+                <Border BorderThickness="0,1,0,0"
+                        Height="1"
+                        HorizontalAlignment="Stretch"
+                        BorderBrush="{ThemeResource DiligentHighlightBrush}"
+                        Width="200"
+                        Margin="0,50,0,0"></Border>
+                <TextBlock TextWrapping="WrapWholeWords"
+                           TextAlignment="Center"
+                           Foreground="{ThemeResource DiligentHighlightBrush}"
+                           Margin="0,16,0,0"
+                           Text="Ratish Philip"></TextBlock>
+            </StackPanel>
+        </ScrollViewer>
+
+    </Grid>
+</Page>

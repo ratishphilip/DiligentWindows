@@ -1,0 +1,6 @@
+MainPackage=G:\WorkBox\DiligentWindows\DiligentWindows\bin\ARM\Release\DiligentWindows_1.1.4.0_ARM.appx
+SymbolPackage=G:\WorkBox\DiligentWindows\DiligentWindows\AppPackages\DiligentWindows_1.1.4.0_Test\DiligentWindows_1.1.4.0_ARM.appxsym
+ResourcePack=G:\WorkBox\DiligentWindows\DiligentWindows\bin\ARM\Release\DiligentWindows_1.1.4.0_scale-100.appx
+ResourcePack=G:\WorkBox\DiligentWindows\DiligentWindows\bin\ARM\Release\DiligentWindows_1.1.4.0_scale-125.appx
+ResourcePack=G:\WorkBox\DiligentWindows\DiligentWindows\bin\ARM\Release\DiligentWindows_1.1.4.0_scale-150.appx
+ResourcePack=G:\WorkBox\DiligentWindows\DiligentWindows\bin\ARM\Release\DiligentWindows_1.1.4.0_scale-400.appx
