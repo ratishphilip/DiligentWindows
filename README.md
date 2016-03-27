@@ -1,4 +1,5 @@
-# DiligentWindows
+# <img src="https://cloud.githubusercontent.com/assets/7021835/14066421/a9867bb2-f3fd-11e5-9b3b-2c6c6a996285.png" />
+
 **Diligent Windows** is a collection of prototypes of various concept features of Windows 10 & Windows 10 Mobile. These concepts aim to enhance the user experience of existing Windows features. 
 
 DiligentWindows uses the **Win2D** and **WPFSpark.UWP** libraries to create these concepts.
