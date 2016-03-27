@@ -8,6 +8,9 @@ DiligentWindows uses the **Win2D** and **WPFSpark.UWP** libraries to create thes
 
 This is a work in progress project, so you can expect additional concepts to be added in the near future. Any comments or suggestions are always welcome!
 
+<a href="https://www.microsoft.com/en-us/store/apps/diligentwindows/9nblggh4rf3w">**Get DiligentWindows from the Store** </a> 
+
+
 ## Concept 1 - LockScreen for PC
 
 This concept shows how the Login experience should be in a Windows 10 PC.
